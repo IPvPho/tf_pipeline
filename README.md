@@ -1,1 +1,1 @@
-# Clone This Repo To Get Starte With GH Actions And Terraform
+# Clone This Repo To Get Started With GH Actions And Terraform
