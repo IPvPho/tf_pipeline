@@ -54,7 +54,7 @@ jobs:
           BACKEND_STG_ACCNT: ${{ secrets.BACKEND_STG_ACCNT }}
           BACKEND_SUB_ID: ${{ secrets.BACKEND_SUB_ID }}
         run: /
-          cat >backend.tf <<-EOF
+          cat >backend.tf <<EOL
           terraform {
             backend "azurerm" {
               resource_group_name  = "$$BACKEND_RG_NAME"
@@ -64,8 +64,7 @@ jobs:
               key = "dev.tfstate"
             }
           }
-          EOF
-          
+          EOL          
           cat backend.tf 
           
         
